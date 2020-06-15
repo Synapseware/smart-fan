@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Reg_Linear:AMS1117-5.0 U2
+L smart-fan-rescue:AMS1117-5.0-Reg_Linear U2
 U 1 1 5EE1376A
 P 1400 1200
 F 0 "U2" H 1400 1442 50  0000 C CNN
@@ -103,34 +103,34 @@ Wire Wire Line
 Wire Wire Line
 	850  1650 850  1500
 $Comp
-L AmpOperational:MCP602 U1
+L smart-fan-rescue:MCP602-AmpOperational U1
 U 1 1 5EE1D336
 P 3400 2450
 F 0 "U1" H 3400 2817 50  0000 C CNN
 F 1 "MCP602" H 3400 2726 50  0000 C CNN
-F 2 "" H 3400 2450 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3400 2450 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 3400 2450 50  0001 C CNN
 	1    3400 2450
 	1    0    0    -1  
 $EndComp
 $Comp
-L AmpOperational:MCP602 U1
+L smart-fan-rescue:MCP602-AmpOperational U1
 U 2 1 5EE20815
 P 5150 2350
 F 0 "U1" H 5150 2717 50  0000 C CNN
 F 1 "MCP602" H 5150 2626 50  0000 C CNN
-F 2 "" H 5150 2350 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5150 2350 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 5150 2350 50  0001 C CNN
 	2    5150 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L AmpOperational:MCP602 U1
+L smart-fan-rescue:MCP602-AmpOperational U1
 U 3 1 5EE2DBB3
 P 1000 3400
 F 0 "U1" H 958 3446 50  0000 L CNN
 F 1 "MCP602" H 958 3355 50  0000 L CNN
-F 2 "" H 1000 3400 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1000 3400 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 1000 3400 50  0001 C CNN
 	3    1000 3400
 	1    0    0    -1  
@@ -236,7 +236,7 @@ U 1 1 5EE47DF6
 P 4300 1850
 F 0 "RV1" H 4232 1896 50  0000 R CNN
 F 1 "10k" H 4232 1805 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4300 1850 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3266Y_Vertical" H 4300 1850 50  0001 C CNN
 F 3 "~" H 4300 1850 50  0001 C CNN
 	1    4300 1850
 	1    0    0    -1  
@@ -274,7 +274,7 @@ U 1 1 5EE53F29
 P 6050 2350
 F 0 "Q3" H 6255 2396 50  0000 L CNN
 F 1 "Q_PMOS_GSD" H 6255 2305 50  0000 L CNN
-F 2 "" H 6250 2450 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6250 2450 50  0001 C CNN
 F 3 "~" H 6050 2350 50  0001 C CNN
 	1    6050 2350
 	1    0    0    -1  
@@ -316,7 +316,7 @@ F 3 "~" H 6450 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TransistorBJT:BC817 Q4
+L smart-fan-rescue:BC817-TransistorBJT Q4
 U 1 1 5EE5A90C
 P 6900 2650
 F 0 "Q4" H 7091 2696 50  0000 L CNN
@@ -353,13 +353,13 @@ U 1 1 5EE81F54
 P 3000 4850
 F 0 "U3" H 3000 5431 50  0000 C CNN
 F 1 "NE555P" H 3000 5340 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 3650 4450 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_5.275x5.275mm_P1.27mm" H 3650 4450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 3850 4450 50  0001 C CNN
 	1    3000 4850
 	1    0    0    -1  
 $EndComp
 $Comp
-L TransistorBJT:BC817 Q1
+L smart-fan-rescue:BC817-TransistorBJT Q1
 U 1 1 5EE8608C
 P 4950 4650
 F 0 "Q1" H 5141 4696 50  0000 L CNN
@@ -565,12 +565,12 @@ Connection ~ 2350 4650
 Wire Wire Line
 	3500 4650 4350 4650
 $Comp
-L ConnectorMountingPin:Conn_01x03_MountingPin J1
+L smart-fan-rescue:Conn_01x03_MountingPin-ConnectorMountingPin J1
 U 1 1 5EEE3110
 P 2150 2350
 F 0 "J1" H 2238 2222 50  0000 L CNN
-F 1 "Conn_01x03_MountingPin" H 2238 2313 50  0000 L CNN
-F 2 "" H 2150 2350 50  0001 C CNN
+F 1 "TEMP_In" H 2238 2313 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 2150 2350 50  0001 C CNN
 F 3 "~" H 2150 2350 50  0001 C CNN
 	1    2150 2350
 	-1   0    0    1   
@@ -591,7 +591,7 @@ L Connector:Barrel_Jack J2
 U 1 1 5EEEC284
 P 3100 1000
 F 0 "J2" H 3157 1325 50  0000 C CNN
-F 1 "Barrel_Jack" H 3157 1234 50  0000 C CNN
+F 1 "12V_PWR" H 3157 1234 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal_CircularHoles" H 3150 960 50  0001 C CNN
 F 3 "~" H 3150 960 50  0001 C CNN
 	1    3100 1000
@@ -610,8 +610,8 @@ L Connector:Screw_Terminal_01x02 J3
 U 1 1 5EEF9B60
 P 4200 950
 F 0 "J3" H 4280 942 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 4280 851 50  0000 L CNN
-F 2 "Connector_PinSocket254mm:PinSocket_1x02_P2.54mm_Vertical" H 4200 950 50  0001 C CNN
+F 1 "12V_In" H 4280 851 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4200 950 50  0001 C CNN
 F 3 "~" H 4200 950 50  0001 C CNN
 	1    4200 950 
 	1    0    0    -1  
@@ -631,7 +631,7 @@ Wire Wire Line
 	3850 1100 3550 1100
 Connection ~ 3550 1100
 $Comp
-L Power:+5V #PWR0101
+L smart-fan-rescue:+5V-Power #PWR0101
 U 1 1 5EF075B6
 P 4300 1450
 F 0 "#PWR0101" H 4300 1300 50  0001 C CNN
@@ -642,7 +642,7 @@ F 3 "" H 4300 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:+5V #PWR0102
+L smart-fan-rescue:+5V-Power #PWR0102
 U 1 1 5EF08EF6
 P 6150 1650
 F 0 "#PWR0102" H 6150 1500 50  0001 C CNN
@@ -653,7 +653,7 @@ F 3 "" H 6150 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:+5V #PWR0103
+L smart-fan-rescue:+5V-Power #PWR0103
 U 1 1 5EF093BB
 P 1900 850
 F 0 "#PWR0103" H 1900 700 50  0001 C CNN
@@ -664,7 +664,7 @@ F 3 "" H 1900 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:+5V #PWR0104
+L smart-fan-rescue:+5V-Power #PWR0104
 U 1 1 5EF099FD
 P 2500 2100
 F 0 "#PWR0104" H 2500 1950 50  0001 C CNN
@@ -675,7 +675,7 @@ F 3 "" H 2500 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:+5V #PWR0105
+L smart-fan-rescue:+5V-Power #PWR0105
 U 1 1 5EF0D3EB
 P 1150 2750
 F 0 "#PWR0105" H 1150 2600 50  0001 C CNN
@@ -688,7 +688,7 @@ $EndComp
 Wire Wire Line
 	1150 2750 1150 2900
 $Comp
-L Power:GND #PWR0106
+L smart-fan-rescue:GND-Power #PWR0106
 U 1 1 5EF0F5D1
 P 5600 5550
 F 0 "#PWR0106" H 5600 5300 50  0001 C CNN
@@ -699,7 +699,7 @@ F 3 "" H 5600 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:GND #PWR0107
+L smart-fan-rescue:GND-Power #PWR0107
 U 1 1 5EF10E2C
 P 3000 5850
 F 0 "#PWR0107" H 3000 5600 50  0001 C CNN
@@ -710,7 +710,7 @@ F 3 "" H 3000 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:GND #PWR0108
+L smart-fan-rescue:GND-Power #PWR0108
 U 1 1 5EF1142C
 P 1150 3950
 F 0 "#PWR0108" H 1150 3700 50  0001 C CNN
@@ -721,7 +721,7 @@ F 3 "" H 1150 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:GND #PWR0109
+L smart-fan-rescue:GND-Power #PWR0109
 U 1 1 5EF11B1A
 P 2950 3350
 F 0 "#PWR0109" H 2950 3100 50  0001 C CNN
@@ -732,7 +732,7 @@ F 3 "" H 2950 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:GND #PWR0110
+L smart-fan-rescue:GND-Power #PWR0110
 U 1 1 5EF11F93
 P 6600 3400
 F 0 "#PWR0110" H 6600 3150 50  0001 C CNN
@@ -743,7 +743,7 @@ F 3 "" H 6600 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:GND #PWR0111
+L smart-fan-rescue:GND-Power #PWR0111
 U 1 1 5EF123EA
 P 3550 1350
 F 0 "#PWR0111" H 3550 1100 50  0001 C CNN
@@ -754,7 +754,7 @@ F 3 "" H 3550 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:GND #PWR0112
+L smart-fan-rescue:GND-Power #PWR0112
 U 1 1 5EF129EA
 P 1400 1850
 F 0 "#PWR0112" H 1400 1600 50  0001 C CNN
@@ -765,7 +765,7 @@ F 3 "" H 1400 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:GND #PWR0113
+L smart-fan-rescue:GND-Power #PWR0113
 U 1 1 5EF12DA8
 P 4300 2100
 F 0 "#PWR0113" H 4300 1850 50  0001 C CNN
@@ -776,7 +776,7 @@ F 3 "" H 4300 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:+12V #PWR0114
+L smart-fan-rescue:+12V-Power #PWR0114
 U 1 1 5EF14025
 P 850 850
 F 0 "#PWR0114" H 850 700 50  0001 C CNN
@@ -787,7 +787,7 @@ F 3 "" H 850 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:+12V #PWR0115
+L smart-fan-rescue:+12V-Power #PWR0115
 U 1 1 5EF1468B
 P 3550 700
 F 0 "#PWR0115" H 3550 550 50  0001 C CNN
@@ -798,7 +798,7 @@ F 3 "" H 3550 700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:+12V #PWR0116
+L smart-fan-rescue:+12V-Power #PWR0116
 U 1 1 5EF14C4F
 P 5600 3700
 F 0 "#PWR0116" H 5600 3550 50  0001 C CNN
@@ -809,7 +809,7 @@ F 3 "" H 5600 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:+12V #PWR0117
+L smart-fan-rescue:+12V-Power #PWR0117
 U 1 1 5EF151D4
 P 3000 3900
 F 0 "#PWR0117" H 3000 3750 50  0001 C CNN
@@ -829,8 +829,8 @@ L Connector:Conn_01x03_Male J4
 U 1 1 5EF2D23F
 P 6300 4550
 F 0 "J4" H 6272 4482 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 6272 4573 50  0000 R CNN
-F 2 "Connector_Pin127mm:PinHeader_1x03_P1.27mm_Vertical" H 6300 4550 50  0001 C CNN
+F 1 "FAN_Out" H 6272 4573 50  0000 R CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 6300 4550 50  0001 C CNN
 F 3 "~" H 6300 4550 50  0001 C CNN
 	1    6300 4550
 	-1   0    0    1   
@@ -840,12 +840,12 @@ Trigger
 Text GLabel 7400 2250 0    50   UnSpc ~ 0
 Trigger
 $Comp
-L Device:Q_PMOS_GSD Q?
+L Device:Q_PMOS_GSD Q2
 U 1 1 5EE2C712
 P 5500 4250
-F 0 "Q?" H 5705 4296 50  0000 L CNN
+F 0 "Q2" H 5705 4296 50  0000 L CNN
 F 1 "Q_PMOS_GSD" H 5705 4205 50  0000 L CNN
-F 2 "" H 5700 4350 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 5700 4350 50  0001 C CNN
 F 3 "~" H 5500 4250 50  0001 C CNN
 	1    5500 4250
 	1    0    0    -1  
