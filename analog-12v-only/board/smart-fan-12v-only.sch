@@ -18,7 +18,7 @@ L Device:R R5
 U 1 1 5EE16E35
 P 4350 2450
 F 0 "R5" V 4557 2450 50  0000 C CNN
-F 1 "2.2k" V 4466 2450 50  0000 C CNN
+F 1 "1k" V 4466 2450 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 4280 2450 50  0001 C CNN
 F 3 "~" H 4350 2450 50  0001 C CNN
 	1    4350 2450
@@ -29,7 +29,7 @@ L Device:R R2
 U 1 1 5EE184F2
 P 2950 3000
 F 0 "R2" H 3020 3046 50  0000 L CNN
-F 1 "9.2k" H 3020 2955 50  0000 L CNN
+F 1 "1k5" H 3020 2955 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 2880 3000 50  0001 C CNN
 F 3 "~" H 2950 3000 50  0001 C CNN
 	1    2950 3000
@@ -40,7 +40,7 @@ L Device:R R3
 U 1 1 5EE18D0B
 P 3400 2750
 F 0 "R3" V 3193 2750 50  0000 C CNN
-F 1 "82k" V 3284 2750 50  0000 C CNN
+F 1 "3k" V 3284 2750 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 3330 2750 50  0001 C CNN
 F 3 "~" H 3400 2750 50  0001 C CNN
 	1    3400 2750
@@ -60,7 +60,7 @@ F 3 "~" H 850 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L smart-fan-rescue:MCP602-AmpOperational U1
+L smart-fan-12v-only-rescue:MCP602-AmpOperational-smart-fan-rescue U1
 U 1 1 5EE1D336
 P 3450 2450
 F 0 "U1" H 3450 2817 50  0000 C CNN
@@ -71,7 +71,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 3450 2450 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L smart-fan-rescue:MCP602-AmpOperational U1
+L smart-fan-12v-only-rescue:MCP602-AmpOperational-smart-fan-rescue U1
 U 2 1 5EE20815
 P 5150 2350
 F 0 "U1" H 5150 2717 50  0000 C CNN
@@ -82,7 +82,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 5150 2350 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L smart-fan-rescue:MCP602-AmpOperational U1
+L smart-fan-12v-only-rescue:MCP602-AmpOperational-smart-fan-rescue U1
 U 3 1 5EE2DBB3
 P 1000 3400
 F 0 "U1" H 958 3446 50  0000 L CNN
@@ -160,7 +160,7 @@ L Device:R R7
 U 1 1 5EE43D41
 P 5150 2750
 F 0 "R7" V 4943 2750 50  0000 C CNN
-F 1 "2.2k" V 5034 2750 50  0000 C CNN
+F 1 "100k" V 5034 2750 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5080 2750 50  0001 C CNN
 F 3 "~" H 5150 2750 50  0001 C CNN
 	1    5150 2750
@@ -190,7 +190,7 @@ L Device:R_POT_TRIM_US RV1
 U 1 1 5EE47DF6
 P 4300 1650
 F 0 "RV1" H 4232 1696 50  0000 R CNN
-F 1 "100k" H 4232 1605 50  0000 R CNN
+F 1 "10k" H 4232 1605 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_3266Y_Vertical" H 4300 1650 50  0001 C CNN
 F 3 "~" H 4300 1650 50  0001 C CNN
 	1    4300 1650
@@ -248,7 +248,7 @@ L Device:R R8
 U 1 1 5EE883E5
 P 5150 3900
 F 0 "R8" V 4943 3900 50  0000 C CNN
-F 1 "68k" V 5034 3900 50  0000 C CNN
+F 1 "10k" V 5034 3900 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5080 3900 50  0001 C CNN
 F 3 "~" H 5150 3900 50  0001 C CNN
 	1    5150 3900
@@ -289,8 +289,6 @@ Wire Wire Line
 Wire Wire Line
 	4900 3900 5000 3900
 Connection ~ 4900 4250
-Wire Wire Line
-	4600 4650 4350 4650
 Wire Wire Line
 	4900 4850 4900 5400
 Wire Wire Line
@@ -348,7 +346,7 @@ L Device:R R1
 U 1 1 5EEAED99
 P 2350 4400
 F 0 "R1" H 2420 4446 50  0000 L CNN
-F 1 "1M" H 2420 4355 50  0000 L CNN
+F 1 "100k" H 2420 4355 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 2280 4400 50  0001 C CNN
 F 3 "~" H 2350 4400 50  0001 C CNN
 	1    2350 4400
@@ -365,7 +363,7 @@ L Device:R R4
 U 1 1 5EEB2686
 P 3650 4400
 F 0 "R4" H 3720 4446 50  0000 L CNN
-F 1 "100k" H 3720 4355 50  0000 L CNN
+F 1 "1M" H 3720 4355 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 3580 4400 50  0001 C CNN
 F 3 "~" H 3650 4400 50  0001 C CNN
 	1    3650 4400
@@ -472,7 +470,7 @@ Connection ~ 2500 1200
 Wire Wire Line
 	1150 2750 1150 2900
 $Comp
-L smart-fan-rescue:GND-Power #PWR0106
+L smart-fan-12v-only-rescue:GND-Power-smart-fan-rescue #PWR0106
 U 1 1 5EF0F5D1
 P 5600 5550
 F 0 "#PWR0106" H 5600 5300 50  0001 C CNN
@@ -483,7 +481,7 @@ F 3 "" H 5600 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L smart-fan-rescue:GND-Power #PWR0107
+L smart-fan-12v-only-rescue:GND-Power-smart-fan-rescue #PWR0107
 U 1 1 5EF10E2C
 P 3000 5850
 F 0 "#PWR0107" H 3000 5600 50  0001 C CNN
@@ -494,7 +492,7 @@ F 3 "" H 3000 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L smart-fan-rescue:GND-Power #PWR0108
+L smart-fan-12v-only-rescue:GND-Power-smart-fan-rescue #PWR0108
 U 1 1 5EF1142C
 P 1150 3950
 F 0 "#PWR0108" H 1150 3700 50  0001 C CNN
@@ -505,7 +503,7 @@ F 3 "" H 1150 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L smart-fan-rescue:GND-Power #PWR0109
+L smart-fan-12v-only-rescue:GND-Power-smart-fan-rescue #PWR0109
 U 1 1 5EF11B1A
 P 2950 3350
 F 0 "#PWR0109" H 2950 3100 50  0001 C CNN
@@ -516,7 +514,7 @@ F 3 "" H 2950 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L smart-fan-rescue:GND-Power #PWR0111
+L smart-fan-12v-only-rescue:GND-Power-smart-fan-rescue #PWR0111
 U 1 1 5EF123EA
 P 2500 1400
 F 0 "#PWR0111" H 2500 1150 50  0001 C CNN
@@ -527,7 +525,7 @@ F 3 "" H 2500 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L smart-fan-rescue:GND-Power #PWR0112
+L smart-fan-12v-only-rescue:GND-Power-smart-fan-rescue #PWR0112
 U 1 1 5EF129EA
 P 850 1950
 F 0 "#PWR0112" H 850 1700 50  0001 C CNN
@@ -538,7 +536,7 @@ F 3 "" H 850 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L smart-fan-rescue:GND-Power #PWR0113
+L smart-fan-12v-only-rescue:GND-Power-smart-fan-rescue #PWR0113
 U 1 1 5EF12DA8
 P 4300 1900
 F 0 "#PWR0113" H 4300 1650 50  0001 C CNN
@@ -549,7 +547,7 @@ F 3 "" H 4300 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L smart-fan-rescue:+12V-Power #PWR0114
+L smart-fan-12v-only-rescue:+12V-Power-smart-fan-rescue #PWR0114
 U 1 1 5EF14025
 P 850 750
 F 0 "#PWR0114" H 850 600 50  0001 C CNN
@@ -560,7 +558,7 @@ F 3 "" H 850 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L smart-fan-rescue:+12V-Power #PWR0115
+L smart-fan-12v-only-rescue:+12V-Power-smart-fan-rescue #PWR0115
 U 1 1 5EF1468B
 P 2500 850
 F 0 "#PWR0115" H 2500 700 50  0001 C CNN
@@ -571,7 +569,7 @@ F 3 "" H 2500 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L smart-fan-rescue:+12V-Power #PWR0116
+L smart-fan-12v-only-rescue:+12V-Power-smart-fan-rescue #PWR0116
 U 1 1 5EF14C4F
 P 5600 3700
 F 0 "#PWR0116" H 5600 3550 50  0001 C CNN
@@ -579,17 +577,6 @@ F 1 "+12V" H 5615 3873 50  0000 C CNN
 F 2 "" H 5600 3700 50  0001 C CNN
 F 3 "" H 5600 3700 50  0001 C CNN
 	1    5600 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L smart-fan-rescue:+12V-Power #PWR0117
-U 1 1 5EF151D4
-P 3000 3950
-F 0 "#PWR0117" H 3000 3800 50  0001 C CNN
-F 1 "+12V" H 3015 4123 50  0000 C CNN
-F 2 "" H 3000 3950 50  0001 C CNN
-F 3 "" H 3000 3950 50  0001 C CNN
-	1    3000 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -641,24 +628,11 @@ L Device:D_Schottky D2
 U 1 1 5EEDDC4D
 P 5250 4900
 F 0 "D2" V 5296 4820 50  0000 R CNN
-F 1 "D_Schottky" V 5205 4820 50  0000 R CNN
+F 1 "1N5818" V 5205 4820 50  0000 R CNN
 F 2 "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp" H 5250 4900 50  0001 C CNN
 F 3 "~" H 5250 4900 50  0001 C CNN
 	1    5250 4900
 	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3500 4650 4050 4650
-$Comp
-L Device:R R6
-U 1 1 5EE88F47
-P 4200 4650
-F 0 "R6" V 3993 4650 50  0000 C CNN
-F 1 "2.2k" V 4084 4650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 4130 4650 50  0001 C CNN
-F 3 "~" H 4200 4650 50  0001 C CNN
-	1    4200 4650
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5600 4550 5250 4550
@@ -671,17 +645,6 @@ Wire Wire Line
 	5250 5400 5600 5400
 Wire Wire Line
 	6300 4900 6300 5400
-$Comp
-L smart-fan-12v-only-rescue:2N3904-TransistorBJT Q1
-U 1 1 5EF082D2
-P 4800 4650
-F 0 "Q1" H 4990 4696 50  0000 L CNN
-F 1 "2N3904" H 4990 4605 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5000 4575 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4800 4650 50  0001 L CNN
-	1    4800 4650
-	1    0    0    -1  
-$EndComp
 $Comp
 L smart-fan-12v-only-rescue:FQP27P06-TransistorFET Q2
 U 1 1 5EF09F99
@@ -721,17 +684,6 @@ Wire Wire Line
 	1250 1300 1250 1450
 Wire Wire Line
 	1250 1650 1250 1750
-$Comp
-L smart-fan-rescue:+12V-Power #PWR0101
-U 1 1 5EEAE35E
-P 1150 2750
-F 0 "#PWR0101" H 1150 2600 50  0001 C CNN
-F 1 "+12V" H 1165 2923 50  0000 C CNN
-F 2 "" H 1150 2750 50  0001 C CNN
-F 3 "" H 1150 2750 50  0001 C CNN
-	1    1150 2750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	850  1500 850  1750
 Wire Wire Line
@@ -744,28 +696,6 @@ Wire Wire Line
 Connection ~ 850  1750
 Wire Wire Line
 	850  1750 850  1950
-$Comp
-L smart-fan-rescue:+12V-Power #PWR0102
-U 1 1 5EEDB425
-P 4300 1300
-F 0 "#PWR0102" H 4300 1150 50  0001 C CNN
-F 1 "+12V" H 4315 1473 50  0000 C CNN
-F 2 "" H 4300 1300 50  0001 C CNN
-F 3 "" H 4300 1300 50  0001 C CNN
-	1    4300 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L smart-fan-rescue:+12V-Power #PWR0103
-U 1 1 5EEDB9AA
-P 2700 1700
-F 0 "#PWR0103" H 2700 1550 50  0001 C CNN
-F 1 "+12V" H 2715 1873 50  0000 C CNN
-F 2 "" H 2700 1700 50  0001 C CNN
-F 3 "" H 2700 1700 50  0001 C CNN
-	1    2700 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5650 2350 6400 2350
 $Comp
@@ -794,4 +724,136 @@ Wire Wire Line
 	2700 1700 2700 1850
 Wire Wire Line
 	2700 2150 2700 2350
+$Comp
+L TransistorFET:2N7000 Q1
+U 1 1 5EEC101F
+P 4800 4650
+F 0 "Q1" H 5004 4696 50  0000 L CNN
+F 1 "2N7000" H 5004 4605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5000 4575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4800 4650 50  0001 L CNN
+	1    4800 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Reg_Linear:L7809 U2
+U 1 1 5EEC3711
+P 7100 1000
+F 0 "U2" H 7100 1242 50  0000 C CNN
+F 1 "L7809" H 7100 1151 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 7125 850 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 7100 950 50  0001 C CNN
+	1    7100 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 5EEC485C
+P 7650 1300
+F 0 "C3" H 7768 1346 50  0000 L CNN
+F 1 "10uF" H 7768 1255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 7688 1150 50  0001 C CNN
+F 3 "~" H 7650 1300 50  0001 C CNN
+	1    7650 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1000 7650 1000
+Wire Wire Line
+	7650 1000 7650 1150
+Wire Wire Line
+	7650 1000 7650 800 
+Connection ~ 7650 1000
+Wire Wire Line
+	7650 1450 7650 1600
+Wire Wire Line
+	7650 1600 7100 1600
+Wire Wire Line
+	7100 1600 7100 1300
+Wire Wire Line
+	7100 1600 7100 1750
+Connection ~ 7100 1600
+$Comp
+L smart-fan-12v-only-rescue:GND-Power-smart-fan-rescue #PWR0101
+U 1 1 5EED7C19
+P 7100 1750
+F 0 "#PWR0101" H 7100 1500 50  0001 C CNN
+F 1 "GND" H 7105 1577 50  0000 C CNN
+F 2 "" H 7100 1750 50  0001 C CNN
+F 3 "" H 7100 1750 50  0001 C CNN
+	1    7100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power:+9V #PWR0102
+U 1 1 5EED8706
+P 7650 800
+F 0 "#PWR0102" H 7650 650 50  0001 C CNN
+F 1 "+9V" H 7665 973 50  0000 C CNN
+F 2 "" H 7650 800 50  0001 C CNN
+F 3 "" H 7650 800 50  0001 C CNN
+	1    7650 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L smart-fan-12v-only-rescue:+12V-Power-smart-fan-rescue #PWR0103
+U 1 1 5EEDDA82
+P 6650 800
+F 0 "#PWR0103" H 6650 650 50  0001 C CNN
+F 1 "+12V" H 6665 973 50  0000 C CNN
+F 2 "" H 6650 800 50  0001 C CNN
+F 3 "" H 6650 800 50  0001 C CNN
+	1    6650 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1000 6650 1000
+Wire Wire Line
+	6650 1000 6650 800 
+$Comp
+L Power:+9V #PWR0104
+U 1 1 5EEE3C6D
+P 4300 1300
+F 0 "#PWR0104" H 4300 1150 50  0001 C CNN
+F 1 "+9V" H 4315 1473 50  0000 C CNN
+F 2 "" H 4300 1300 50  0001 C CNN
+F 3 "" H 4300 1300 50  0001 C CNN
+	1    4300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power:+9V #PWR0105
+U 1 1 5EEE4039
+P 2700 1700
+F 0 "#PWR0105" H 2700 1550 50  0001 C CNN
+F 1 "+9V" H 2715 1873 50  0000 C CNN
+F 2 "" H 2700 1700 50  0001 C CNN
+F 3 "" H 2700 1700 50  0001 C CNN
+	1    2700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power:+9V #PWR0110
+U 1 1 5EEE44AD
+P 3000 3950
+F 0 "#PWR0110" H 3000 3800 50  0001 C CNN
+F 1 "+9V" H 3015 4123 50  0000 C CNN
+F 2 "" H 3000 3950 50  0001 C CNN
+F 3 "" H 3000 3950 50  0001 C CNN
+	1    3000 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power:+9V #PWR0117
+U 1 1 5EEE4AEF
+P 1150 2750
+F 0 "#PWR0117" H 1150 2600 50  0001 C CNN
+F 1 "+9V" H 1165 2923 50  0000 C CNN
+F 2 "" H 1150 2750 50  0001 C CNN
+F 3 "" H 1150 2750 50  0001 C CNN
+	1    1150 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4650 4600 4650
 $EndSCHEMATC
