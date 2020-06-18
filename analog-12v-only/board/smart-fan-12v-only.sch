@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A0 46811 33110
+$Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
@@ -672,7 +672,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 4900 6300 5400
 $Comp
-L TransistorBJT:2N3904 Q1
+L smart-fan-12v-only-rescue:2N3904-TransistorBJT Q1
 U 1 1 5EF082D2
 P 4800 4650
 F 0 "Q1" H 4990 4696 50  0000 L CNN
@@ -683,7 +683,7 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4800 4650 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L TransistorFET:FQP27P06 Q2
+L smart-fan-12v-only-rescue:FQP27P06-TransistorFET Q2
 U 1 1 5EF09F99
 P 5500 4250
 F 0 "Q2" H 5704 4296 50  0000 L CNN
@@ -769,7 +769,7 @@ $EndComp
 Wire Wire Line
 	5650 2350 6400 2350
 $Comp
-L ConnectorMountingPin:Conn_01x02_MountingPin J1
+L smart-fan-12v-only-rescue:Conn_01x02_MountingPin-ConnectorMountingPin J1
 U 1 1 5EF516C3
 P 2100 2450
 F 0 "J1" H 2187 2272 50  0000 L CNN

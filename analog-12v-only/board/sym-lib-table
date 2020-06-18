@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name smart-fan-rescue)(type Legacy)(uri ${KIPRJMOD}/smart-fan-12v-only-rescue.lib)(options "")(descr ""))
+  (lib (name smart-fan-12v-only-rescue)(type Legacy)(uri ${KIPRJMOD}/smart-fan-12v-only-rescue.lib)(options "")(descr ""))
 )
