@@ -257,23 +257,23 @@ $EndComp
 $Comp
 L Device:R R9
 U 1 1 5EE89D31
-P 5600 4750
-F 0 "R9" H 5670 4796 50  0000 L CNN
-F 1 "27k" H 5670 4705 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5530 4750 50  0001 C CNN
-F 3 "~" H 5600 4750 50  0001 C CNN
-	1    5600 4750
+P 4250 4950
+F 0 "R9" H 4320 4996 50  0000 L CNN
+F 1 "3k3" H 4320 4905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 4180 4950 50  0001 C CNN
+F 3 "~" H 4250 4950 50  0001 C CNN
+	1    4250 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED_Small D1
 U 1 1 5EE8AC2E
-P 5600 5100
-F 0 "D1" V 5646 5030 50  0000 R CNN
-F 1 "RED_LED" V 5555 5030 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" V 5600 5100 50  0001 C CNN
-F 3 "~" V 5600 5100 50  0001 C CNN
-	1    5600 5100
+P 4250 5300
+F 0 "D1" V 4296 5230 50  0000 R CNN
+F 1 "RED_LED" V 4205 5230 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" V 4250 5300 50  0001 C CNN
+F 3 "~" V 4250 5300 50  0001 C CNN
+	1    4250 5300
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -294,9 +294,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 5400 5250 5400
 Wire Wire Line
-	5600 5400 5600 5200
-Wire Wire Line
-	5600 4600 5600 4550
+	4250 5600 4250 5400
 Wire Wire Line
 	5600 4550 6000 4550
 Connection ~ 5600 4550
@@ -374,7 +372,7 @@ L Device:CP C6
 U 1 1 5EEB3316
 P 3650 5350
 F 0 "C6" H 3768 5396 50  0000 L CNN
-F 1 "100uF" H 3768 5305 50  0000 L CNN
+F 1 "330uF" H 3768 5305 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 3688 5200 50  0001 C CNN
 F 3 "~" H 3650 5350 50  0001 C CNN
 	1    3650 5350
@@ -448,7 +446,7 @@ U 1 1 5EEF9B60
 P 3150 1050
 F 0 "J3" H 3230 1042 50  0000 L CNN
 F 1 "12V_In" H 3230 951 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3150 1050 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3150 1050 50  0001 C CNN
 F 3 "~" H 3150 1050 50  0001 C CNN
 	1    3150 1050
 	1    0    0    -1  
@@ -599,7 +597,7 @@ Trigger
 Text GLabel 6400 2350 0    50   UnSpc ~ 0
 Trigger
 Wire Wire Line
-	5600 4900 5600 5000
+	4250 5100 4250 5200
 $Comp
 L Connector:Conn_01x03_Male J5
 U 1 1 5EEA3848
@@ -628,11 +626,11 @@ L Device:D_Schottky D2
 U 1 1 5EEDDC4D
 P 5250 4900
 F 0 "D2" V 5296 4820 50  0000 R CNN
-F 1 "1N5818" V 5205 4820 50  0000 R CNN
+F 1 "1N5820" V 5205 4820 50  0000 R CNN
 F 2 "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp" H 5250 4900 50  0001 C CNN
 F 3 "~" H 5250 4900 50  0001 C CNN
 	1    5250 4900
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5600 4550 5250 4550
@@ -654,7 +652,7 @@ F 1 "FQP27P06" H 5704 4205 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5700 4175 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/FQP27P06-D.PDF" H 5500 4250 50  0001 L CNN
 	1    5500 4250
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:LED_Small D3
@@ -672,7 +670,7 @@ L Device:R R12
 U 1 1 5EF2D5AF
 P 1250 1150
 F 0 "R12" H 1320 1196 50  0000 L CNN
-F 1 "27k" H 1320 1105 50  0000 L CNN
+F 1 "5k" H 1320 1105 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 1180 1150 50  0001 C CNN
 F 3 "~" H 1250 1150 50  0001 C CNN
 	1    1250 1150
@@ -725,7 +723,7 @@ Wire Wire Line
 Wire Wire Line
 	2700 2150 2700 2350
 $Comp
-L TransistorFET:2N7000 Q1
+L smart-fan-12v-only-rescue:2N7000-TransistorFET Q1
 U 1 1 5EEC101F
 P 4800 4650
 F 0 "Q1" H 5004 4696 50  0000 L CNN
@@ -736,7 +734,7 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4800 4650 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Reg_Linear:L7809 U2
+L smart-fan-12v-only-rescue:L7809-Reg_Linear U2
 U 1 1 5EEC3711
 P 7100 1000
 F 0 "U2" H 7100 1242 50  0000 C CNN
@@ -785,7 +783,7 @@ F 3 "" H 7100 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:+9V #PWR0102
+L smart-fan-12v-only-rescue:+9V-Power #PWR0102
 U 1 1 5EED8706
 P 7650 800
 F 0 "#PWR0102" H 7650 650 50  0001 C CNN
@@ -811,7 +809,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 1000 6650 800 
 $Comp
-L Power:+9V #PWR0104
+L smart-fan-12v-only-rescue:+9V-Power #PWR0104
 U 1 1 5EEE3C6D
 P 4300 1300
 F 0 "#PWR0104" H 4300 1150 50  0001 C CNN
@@ -822,7 +820,7 @@ F 3 "" H 4300 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:+9V #PWR0105
+L smart-fan-12v-only-rescue:+9V-Power #PWR0105
 U 1 1 5EEE4039
 P 2700 1700
 F 0 "#PWR0105" H 2700 1550 50  0001 C CNN
@@ -833,7 +831,7 @@ F 3 "" H 2700 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:+9V #PWR0110
+L smart-fan-12v-only-rescue:+9V-Power #PWR0110
 U 1 1 5EEE44AD
 P 3000 3950
 F 0 "#PWR0110" H 3000 3800 50  0001 C CNN
@@ -844,7 +842,7 @@ F 3 "" H 3000 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power:+9V #PWR0117
+L smart-fan-12v-only-rescue:+9V-Power #PWR0117
 U 1 1 5EEE4AEF
 P 1150 2750
 F 0 "#PWR0117" H 1150 2600 50  0001 C CNN
@@ -855,5 +853,21 @@ F 3 "" H 1150 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 4650 4600 4650
+	3500 4650 4250 4650
+Wire Wire Line
+	4250 4650 4250 4800
+Connection ~ 4250 4650
+Wire Wire Line
+	4250 4650 4600 4650
+$Comp
+L smart-fan-12v-only-rescue:GND-Power-smart-fan-rescue #PWR0118
+U 1 1 5F016451
+P 4250 5600
+F 0 "#PWR0118" H 4250 5350 50  0001 C CNN
+F 1 "GND" H 4255 5427 50  0000 C CNN
+F 2 "" H 4250 5600 50  0001 C CNN
+F 3 "" H 4250 5600 50  0001 C CNN
+	1    4250 5600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
