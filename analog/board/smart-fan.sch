@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A0 46811 33110
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title ""
@@ -29,7 +29,7 @@ L Device:R R5
 U 1 1 5EE16E35
 P 4350 2450
 F 0 "R5" V 4557 2450 50  0000 C CNN
-F 1 "2.2k" V 4466 2450 50  0000 C CNN
+F 1 "1k" V 4466 2450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4280 2450 50  0001 C CNN
 F 3 "~" H 4350 2450 50  0001 C CNN
 	1    4350 2450
@@ -40,7 +40,7 @@ L Device:R R2
 U 1 1 5EE184F2
 P 2950 3000
 F 0 "R2" H 3020 3046 50  0000 L CNN
-F 1 "9.2k" H 3020 2955 50  0000 L CNN
+F 1 "10k" H 3020 2955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2880 3000 50  0001 C CNN
 F 3 "~" H 2950 3000 50  0001 C CNN
 	1    2950 3000
@@ -51,7 +51,7 @@ L Device:R R3
 U 1 1 5EE18D0B
 P 3400 2750
 F 0 "R3" V 3193 2750 50  0000 C CNN
-F 1 "82k" V 3284 2750 50  0000 C CNN
+F 1 "10k" V 3284 2750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3330 2750 50  0001 C CNN
 F 3 "~" H 3400 2750 50  0001 C CNN
 	1    3400 2750
@@ -205,7 +205,7 @@ L Device:R R7
 U 1 1 5EE43D41
 P 5150 2750
 F 0 "R7" V 4943 2750 50  0000 C CNN
-F 1 "2.2k" V 5034 2750 50  0000 C CNN
+F 1 "100k" V 5034 2750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5080 2750 50  0001 C CNN
 F 3 "~" H 5150 2750 50  0001 C CNN
 	1    5150 2750
@@ -347,17 +347,6 @@ Wire Wire Line
 Connection ~ 1150 3800
 Wire Wire Line
 	1150 3800 900  3800
-$Comp
-L Timer:NE555P U3
-U 1 1 5EE81F54
-P 3000 4850
-F 0 "U3" H 3000 5431 50  0000 C CNN
-F 1 "NE555P" H 3000 5340 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_5.275x5.275mm_P1.27mm" H 3650 4450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 3850 4450 50  0001 C CNN
-	1    3000 4850
-	1    0    0    -1  
-$EndComp
 $Comp
 L smart-fan-rescue:BC817-TransistorBJT Q1
 U 1 1 5EE8608C
@@ -892,7 +881,7 @@ F 1 "D_Schottky" V 5205 4820 50  0000 R CNN
 F 2 "Diode_SMD:D_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 5250 4900 50  0001 C CNN
 F 3 "~" H 5250 4900 50  0001 C CNN
 	1    5250 4900
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	3500 4650 4050 4650
@@ -916,4 +905,15 @@ Wire Wire Line
 Connection ~ 5250 5400
 Wire Wire Line
 	5250 5400 5600 5400
+$Comp
+L Timer:LM555 U?
+U 1 1 5F277BFB
+P 3000 4850
+F 0 "U?" H 3000 5431 50  0000 C CNN
+F 1 "LM555" H 3000 5340 50  0000 C CNN
+F 2 "" H 3000 4850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 3000 4850 50  0001 C CNN
+	1    3000 4850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
